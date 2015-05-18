@@ -1,6 +1,13 @@
-language: ruby 
-rvm: 2.2.1 
-script: bundle exec rake test 
+language: ruby
+rvm: 2.2.1
+script: bundle exec rake test
 before_install:
-- export DISPLAY=:99.0 
+- export DISPLAY=:99.0
 - sh -e /etc/init.d/xvfb start
+deploy:
+  provider: heroku
+  api_key:
+    secure: q0pNJUNIOhlTj3fHIkoBa9tuB3pA8Yo8ezFmkEyGUA6kfgJ9HCj7rdh3+7jlFiPcWnnVhpf7Q7OcBf2vfLbjlFKUKZlq4iVraMoXyuyCD9iRlF1+k+wquKi7Z5ik+Aa/vhkvzvTvTUd/JqHNrXf7KOM5WjSpoba+bWG3Z8HYbd5dPhbGpTmfJAHQDJqJaW1zkW309FvPMTfUFPK6Smy7w37tQvocn70TmSW0unmLmBuRwfRQQWDvKqSFY1N1di/Xc5xDMbYds8N9t2X+GzrRXe8bIOEhTh05rc7lD204V5Oa9+7JRWMD8Q72ta0lP1Qb6AtED68jOztyd9VHyxU3s9XJX0hheD/x3JfG9B9xF6AUqsSdFzWgAtEoVu37d7o2jFEwkgdrxPfvdym7WwEBAA3UGcuQRZYyXz6SjBs3TUHE+tlTtZSqlF5hAjbL/toSwutMGhF1r0VQFebZHMEICJab7x7UyrfFhk7/fK3T6pq4wOTw3/T7DrAqB0tme5+/CQv5n5VcxGPTiRRPNx7Ng+5VuGgsNyUoQ4GcChuShfuhZbff5A87iS2PUH/jrWHzMZUYR70KiglFVjjyF+c5X7VQeHOFDSQo1RFGExh5t0SkieRsFq8aZ7qefHlri8F/FxRQ/AUe6EGZvza4WsS0tDxGIV7rWiE7YisVYK8kPeg=
+  app: warm-stream-4102
+  on:
+    repo: hail2skins/kddaesthetics
