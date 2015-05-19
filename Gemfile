@@ -26,6 +26,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem "bootstrap-sass"
 gem "font-awesome-rails"
 gem "simple_form"
+gem 'jquery-ui-rails'
+gem 'jquery-easing-rails'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
