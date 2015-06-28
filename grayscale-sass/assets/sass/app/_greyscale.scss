@@ -212,7 +212,7 @@ a {
   width: 100%;
   padding: 50px 0;
   color: $grayscale-light;
-  background: $grayscale-dark url(../images/downloads-bg.jpg) no-repeat scroll center center;
+  background: $grayscale-dark url(asset_path("candles-and-towel.jpg")) no-repeat scroll center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
