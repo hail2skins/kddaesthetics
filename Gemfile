@@ -60,6 +60,7 @@ end
 #heroku
 gem 'rails_12factor'
 gem "puma", group: :production
+gem 'newrelic_rpm'
 
 ruby "2.2.1"
 
