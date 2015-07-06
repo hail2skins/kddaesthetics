@@ -24,10 +24,12 @@ $(function() {
     });
 });
 
-// Closes the Responsive Menu on Menu Item Click
-$('.navbar-collapse ul li a').click(function() {
-    $('.navbar-toggle:visible').click();
+$(document).ready(function () {
+  $(".navbar-nav li a").click(function(event) {
+    $(".navbar-collapse").collapse('hide');
+  });
 });
+
 
 // Google Maps Scripts
 // When the window has finished loading create our google map below
